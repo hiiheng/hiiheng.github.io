@@ -1,0 +1,331 @@
+/**
+Image CREDIT https://abigailthompson.files.wordpress.com
+**/
+
+.main {
+  background: #b5b5b5;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+  background: transparent;
+  letter-spacing: 4px;
+  border: none;
+/*   animation-name: nav-up; */
+/*   animation-duration: 2s; */
+}
+@media (min-width: 768px) {
+  .navbar {
+    animation-name: nav-up;
+    animation-duration: 1s;
+  }
+  .navbar-scroll {
+    animation-name: nav-down;
+    animation-duration: 1s;
+    letter-spacing: 4px;
+    background: #5A7078;
+    border-bottom: 2px solid white;
+  }
+  .navbar-header{
+    padding-top: 4px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-scroll {
+    background: #5A7078;
+    border-bottom: 2px solid white;
+    box-shadow: 0 0 2px transparent;
+    letter-spacing: 4px;
+
+  }
+}
+@keyframes nav-up {
+  from {
+    background: #5A7078;
+    letter-spacing: 4px;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  to {
+    /*     transform: translateY(12px); */
+    background: transparent;
+    letter-spacing: 4px;
+    border: none;
+  }
+}
+@keyframes nav-down {
+  from {
+/*     transform: translateY(12px); */
+    background: transparent;
+    letter-spacing: 4px;
+    border: none;
+  }
+  to {
+    background: #5A7078;
+    letter-spacing: 4px;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+.navbar-default  {
+  animation-name: fadeToBig;
+  animation-duration: .4s;
+}
+.navbar-default .navbar-nav > li > a:link,
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:visited {
+  color: white;
+  background: transparent;
+}
+
+.navbar-brand span {
+    color:white;
+}
+
+@media (min-width: 768px) {
+  @keyframes fadeToBig{
+    from {
+      -webkit-transform: perspective(1px) translateZ(0) translateY(-12px);
+      transform: perspective(1px) translateZ(0) translateY(-12px);
+      box-shadow: 0 0 2px transparent;
+      opacity: 1;
+      border-bottom: 2px solid #e0e0e0;
+      background: #5A7078;
+    }
+    to {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+  }
+  .navbar .navbar-nav > li {
+    padding-top: 12px;
+  }
+  .navbar-scroll .navbar-nav > li {
+    padding-top: 12px;
+  }
+  .navbar {
+    min-height: 80px;
+  }
+}
+@keyframes fadeToSmall {
+  from {
+    background: transparent;
+  }
+  to {
+    background: #5A7078;
+  }
+}
+@media (max-width: 767px) {
+  .navbar {
+    background: #5A7078;
+    border-bottom: 2px solid #e0e0e0;
+    animation-name: fadeToSmall;
+    animation-duration: .2s;
+  }
+  .navbar-header .navbar-toggle{
+    border: 2px solid #949494;
+  }
+  .navbar-header .navbar-toggle:focus {
+    background: none;
+  }
+  .navbar-header .icon-bar {
+    border: 1px solid #e0e0e0
+  }
+  .navbar-default .navbar-nav > div {
+    background: #C5C8C9;
+  }
+  .navbar-default .navbar-nav {
+    background: #5A7078;
+  }
+  .navbar-default .navbar-nav > li > a:link {
+    background: transparent;
+  }
+  .navbar-default .navbar-nav > li > a:active {
+    background: #7BACBD;
+  }
+  .navbar-default .navbar-nav > li > a:hover {
+    background: #91D4EB;
+  }
+}
+
+.head {
+  padding-top: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.welcome-name {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 1.4em;
+}
+.welcome {
+  color: white;
+  padding: 80px 0 0 0;
+  height: 100vh;
+  background: #c9d1ce;
+  background-image: url('https://abigailthompson.files.wordpress.com/2012/02/199.jpg');
+  background-size: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.welcome-info {
+  font-size: 1.2em;
+}
+.welcome-social {
+  margin-top: 40vh;
+}
+.welcome-social button{
+  background: transparent;
+  border: 2px solid white;
+  font-size: 1.5em;
+  padding: 10px 15px 10px 15px;
+  outline: none;
+}
+.social {
+  display: flex;
+  font-size: 3.4em;
+  margin: 0 auto 40px auto;
+  justify-content: space-between;
+  width: 620px;
+}
+.social-button {
+  flex-basis: 25%;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: inline;
+  margin: 0 40px 0 40px;
+  color: white;
+  outline: none;
+}
+.social-button:hover, .social-button:focus{
+  background:white;
+  color: #a6bce0;
+}
+
+.projects {
+  box-shadow: 0 0 6px black;
+  margin-bottom: 20px;
+  padding-bottom: 6px;
+}
+.project-list {
+  flex-wrap: wrap;
+}
+.project {
+  flex-basis: 30%;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 20px;
+}
+.thumb {
+  border-radius: 10px;
+}
+
+@media (min-width: 601px) {
+  .project-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .project {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 630px) {
+  .welcome-social {
+    margin-top: 40px;
+  }
+  .welcome-social > button {
+    margin-top: 20px;
+  }
+  .social {
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80px;
+  }
+  .social-button {
+    flex-basis: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.head span {
+  padding-top: 5px;
+}
+.head span:before {
+  content: "§|";
+  margin-right: 6px;
+}
+.about {
+  margin-top: -16px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #c9d1ce;
+  padding: 20px 0 20px 0;
+}
+.about-box {
+  justify-content: space-between;
+  margin: 0 auto 0 auto;
+  flex-basis: 30%;
+}
+.about-img {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.about-img img {
+  display:flex;
+}
+.about-edu, .about-oth {
+  padding-top: 10px;
+  font-size: 1.2em;
+  text-align: center;
+}
+.about-edu span, .about-oth span {
+  font-size: .9em;
+}
+.profile{
+  border-radius: 10%;
+}
+.footer {
+  height: 100%;
+  background: #5A7078;
+  font-size: 1em;
+  padding-bottom: 5px;
+  margin-top: -3px;
+  z-index: 0;
+  position: relative;
+}
+.footer > p {
+  margin-top: 3px;
+  margin-bottom: -20px;
+  padding: 4px;
+  background: #5A7078;
+  border-bottom: 2px solid black;
+}
+.contact-info {
+  padding: 20px 0 20px 0;
+  display: block;
+  box-shadow: 0 0 5px black;
+  position: relative;
+  z-index: 20;
+}
+.contact-info p {
+  margin: 0 20px 0 20px;
+}
+
+@media (max-width: 1024px) {
+  .contact-info {
+    text-align: center;
+  } 
+}
+
+@media (max-width: 767px) {
+  .about-box {
+    flex-basis: 100%;
+  }
+}
