@@ -60,32 +60,25 @@ $(document).ready(function() {
   $('.about-edu').append("<p><strong>Bachelor of Science and Arts, Computer Science</strong>&nbsp;&nbsp;May 2016</p><p>University of Texas - Austin</p><p><strong>Front End Developer Program Certification</strong>&nbsp;June 2017</p><p>Freecodecamp</p>");
   $('.about-oth').append('<p>Interested in technology from childhood.</p><p>Learned about programming during my junior year of college and knew it was what I wanted to do as a career!</p>');
   
-document.body.onscroll = function (e) {
+  document.body.onscroll = function (e) {
     if (document.body.scrollTop > 350){
-      $('#navbar').removeClass('navbar');
       $('#navbar').addClass('navbar-scroll');
     } else {
       $('#navbar').removeClass('navbar-scroll');
-      $('#navbar').addClass('navbar');
     }
   }
   document.documentElement.onscroll = function (e) { 
-      if (document.documentElement.scrollTop > 350){
-        $('#navbar').removeClass('navbar');
-        $('#navbar').addClass('navbar-scroll');
-      } else {
-        $('#navbar').removeClass('navbar-scroll');
-        $('#navbar').addClass('navbar');
-      }
+    if (document.documentElement.scrollTop > 350){
+      $('#navbar').addClass('navbar-scroll');
+    } else {
+      $('#navbar').removeClass('navbar-scroll');
     }
+  }
   window.onscroll = function (e) {
     if (window.pageYOffset > 350) {
-        $('#navbar').removeClass('navbar');
-        $('#navbar').addClass('navbar-scroll');
-      } else {
-        $('#navbar').removeClass('navbar-scroll');
-        $('#navbar').addClass('navbar');
-      }
+      $('#navbar').addClass('navbar-scroll');
+    } else {
+      $('#navbar').removeClass('navbar-scroll');
+    }
   }
-
 });
