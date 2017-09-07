@@ -1,96 +1,99 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Heng L. Lam</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-	<link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css'>
-	<link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway'>
-	<link rel='stylesheet' type='text/css' href='main.css'>
-</head>
-<body>
-<!-- 
-Personal Portfolio Page Project
-HTML & CSS & JS
--->
+<html lang="en">
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Heng L.</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="/static/css/index.scroll.css">
+		<link rel="stylesheet" href="/static/css/index.worklist.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="index.js" defer></script>
+		<script src="/static/js/index.scroll.js" defer></script>
+		<script src="/static/js/index.worklist.js" defer></script>
 
-<div class="container-fluid main">
-    <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-<!--           <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-              <img id="logo" src="" alt="</>"><span><\></span>
-            </a>
-          </div> -->
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right" id="nav">
-            <li><a href="#welcome">HOME<span class="sr-only">(current)</span></a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-            <li><a href="#about">ABOUT</a></li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-    </nav>
-  <div class='row'>
-    <div class='content' id='content'>
-      <div class='welcome text-center' id='welcome'>
-        <p class='welcome-name'>Heng.&nbsp;&nbsp;Javascript Developer</p>
-        <p class='welcome-info'></p>
-        <div class='welcome-social'>
-          <div class='social'></div>
-          <button id='read-more' class='center-block hvr-outline-out'></button>
-        </div>
-      </div>
-      <div class='projects' id='projects'>
-        <div class='decorate text-center'  style='padding-top: 15px;'><i class='fa fa-laptop'></i></div>
-        <p class='head'><span>PROJECTS</span></p>
-      </div>
-      <div class='about' id='about'>
-        <div class='about-box' id='about-info'>
-          <div class='about-img'>
-            <img src='https://avatars3.githubusercontent.com/u/26741979' class='profile' alt='profile'>
-          </div>
-        </div>
-        <div class='about-box'>
-          <div class='decorate text-center'><i class='fa fa-graduation-cap'></i></div><p class='head'><span>EDUCATION</span></p>
-          <div class='about-edu'></div>
-          
-        </div>
-        <div class='about-box'>
-          <div class='decorate text-center'><i class='fa fa-keyboard-o'></i></div><p class='head'><span>INTEREST</span></p>
-          <div class='about-oth'></div>
-        </div>
-      </div>
-    </div>
-    <div class='contact-info' id='contact-info'>
-      <p style='font-size:1.8em;'>
-      §| CONTACT
-      </p>
-      <p><em>Email: <span class='email'>hlam93@utexas.edu</span></em></p>
-    </div>
-    <div class='footer' id='contact'>
-      <p class='text-center'>by hiiheng&nbsp;|&nbsp;2017</p>
-    </div>
-  </div>
-    <!-- /.container-fluid -->
-</div>
-
-</body>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js' defer></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' defer></script>
-<script src='main.js' defer></script>
+	</head>
+	<body>
+		<div class="vertical-nav" id="page-nav">
+			<ul class="nav-list">
+				<li><div class="item"><p><span id="work">Work</span></p></div></li>
+				<li><div class="item"><p><a href="/static/files/HENG_Resume.pdf">Resume</a></p></div></li>
+				<li><div class="item"><p><span id="about">About</span></p></div></li>
+			</ul>
+		</div>
+		<div class="content" id="content">
+			<div class="background"></div>
+			<div class="banner-out">
+				<div class="inside-banner">
+					<div class="title-msg">
+						<p>
+							Heng L.
+						</p>
+						<p>
+							Web Developer
+						</p>
+						<p>
+							hiiheng@outlook.com
+						</p>
+					</div>
+					<div class="scroll-container" id="projects-panel"></div>
+					<div class="social">
+						<a class="social-btn" href="https://github.com/hiiheng"><i class="fa fa-github"></i></a>
+						<a class="social-btn" href="https://codepen.io/hiiheng"><i class="fa fa-codepen"></i></a>
+						<a class="social-btn" href="https://www.linkedin.com/in/heng-lam-8b245873/"><i class="fa fa-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="work-box" id="work-box">
+				<span>[Esc]</span>
+				<div>
+					<div class="work-label">
+						<h2>Work</h2>
+					</div>
+					<div class="work-list" id="list-root">
+					</div>
+				</div>
+			</div>
+			<div class="about-box" id="about-box">
+				<span>[Esc]</span>
+				<div>
+					<em>Designing and building real-life solutions to the world's problems.</em>
+				</div>
+				<div>
+					<h3>Education</h3>
+					<div>
+						<p>B.S Computer Science</p>
+						<p>University of Texas at Austin, May 2016</p>
+					</div>
+				</div>
+				<div class="about-tech">
+					<div>
+						<h3>Skills</h3>
+						<div>
+							<ul>
+								<li>Node.js, jQuery, React.js</li>
+								<li>CSS3, Sass</li>
+								<li>HTML5, Jade</li>
+								<li>Java</li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<h3>Technologies</h3>
+						<div>
+							<ul>
+								<li>AWS S3</li>
+								<li>Google Cloud Platform</li>
+								<li>api.ai</li>
+								<li>Mailgun</li>
+								<li>Eclipse</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
